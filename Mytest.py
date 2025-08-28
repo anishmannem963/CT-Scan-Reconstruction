@@ -9,6 +9,7 @@ import torch
 from Mymodel import *
 from MyDataLoader_test import get_Test_Set
 
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--epoch", type=int, default= 299, help="the name of the trained model")
 parser.add_argument("--batch_size", type=int, default=1, help="size of the batches")
@@ -58,4 +59,5 @@ def test():
         filename_abs_root_test = os.path.join(root_result_test, filename_result_test)
         io.imsave(filename_abs_root_test, imgout_test)
         
+
 test()
