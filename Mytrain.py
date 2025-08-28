@@ -9,7 +9,6 @@ import torch
 from Mymodel import *
 from MyDataLoader_train import get_Training_Set
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument("--epoch", type=int, default=0, help="epoch to start training from")
 parser.add_argument("--n_epochs", type=int, default=300, help="number of epochs of training")
@@ -134,4 +133,5 @@ for epoch in range(opt.epoch, opt.n_epochs):
 
 # Save model checkpoints
 torch.save(generator.state_dict(), r"../result/saved_models/generator_%d.pth" % epoch)
+
 torch.save(discriminator.state_dict(), r"../result/saved_models/discriminator_%d.pth" % epoch)
