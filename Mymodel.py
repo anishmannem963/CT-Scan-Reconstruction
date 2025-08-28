@@ -4,6 +4,7 @@ import torch
 from torchsummary import summary
 from math import sqrt
 
+
 def weights_init_normal(m):
     classname = m.__class__.__name__
     if classname.find("Conv") != -1:
@@ -257,4 +258,5 @@ class Discriminator(nn.Module):
     def forward(self, img_A, img_B):
         img_input = torch.cat((img_A, img_B), 1)
         return self.model(img_input)
+
     
