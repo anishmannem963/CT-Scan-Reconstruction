@@ -7,6 +7,7 @@ from glob import glob
 from skimage.metrics import structural_similarity as ssim
 from skimage.metrics import peak_signal_noise_ratio as psnr
 
+
 def load_npy(filepath):
     image = np.load(filepath)
     image = np.array(image).astype('float32')
@@ -75,4 +76,5 @@ pd = calculate_metrices(fd_images, qd_images, result_images)
 
 print(pd)
 pd.to_csv(r"C:\Users\manta\OneDrive\Desktop\CT Scan Reconstruction\CNCL-denoising-main\Mycode\resultss.csv")
+
 
