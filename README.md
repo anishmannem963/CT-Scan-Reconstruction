@@ -18,7 +18,7 @@ The Link of the Dataset is : [Dataset Link](https://aapm.app.box.com/s/eaw4jddb5
 
 ### Model
 
-![image](https://github.com/Manty2503/CT-Scan-Reconstruction/assets/119813195/bf63a52d-0dcf-44c5-b1c2-ee56dfad3aed)
+![image](https://github.com/anishmannem963/CT-Scan-Reconstruction/blob/main/assets/1338000557-bf63a52d-0dcf-44c5-b1c2-ee56dfad3aed.png?raw=true)
 
 So this is the overall architecture CNCL Framework i.e. Content Noise Complementary Learning Framework.
 
@@ -28,7 +28,7 @@ So this is the overall architecture CNCL Framework i.e. Content Noise Complement
 Noise Learning Branch: For Preserving Contrast and Structural Information,
 Content Learning Branch: For Providing stable noise reduction
 
-![image](https://github.com/Manty2503/CT-Scan-Reconstruction/assets/119813195/da31871b-a230-40bb-87a0-4653a1daad1c)
+![image](https://github.com/anishmannem963/CT-Scan-Reconstruction/blob/main/assets/2338001880-da31871b-a230-40bb-87a0-4653a1daad1c.png?raw=true)
 
 Both these branches have a Encoder-Decoder Architecture(U-Net) architecture as shown in the above image.
 
@@ -76,7 +76,7 @@ Myevaluation.py - To calculate the model performance.
 ### Results
 
 
-![image](https://github.com/Manty2503/CT-Scan-Reconstruction/assets/119813195/5e63f78d-d10f-4cad-b15b-f829fe90a452)
+![image](https://github.com/anishmannem963/CT-Scan-Reconstruction/blob/main/assets/3338002807-5e63f78d-d10f-4cad-b15b-f829fe90a452.png?raw=true)
 
 
 
