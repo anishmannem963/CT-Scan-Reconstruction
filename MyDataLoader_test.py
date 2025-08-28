@@ -3,6 +3,7 @@ from glob import glob
 import torch.utils.data as data
 import numpy as np
 
+
 # Path of the data set
 path_noisy = r"..\CNCL-denoising-main\data\mayo_data_pp\test\quarter_1mm"
 path_clean = r"..\CNCL-denoising-main\data\mayo_data_pp\test\full_1mm"
@@ -37,4 +38,5 @@ class DatasetFromFolder(data.Dataset):
         return {"A": target, "B": noisy, "C": mean_n, "D": var_n}
     
     def __len__(self):
+
         return len(self.noisy_list)
